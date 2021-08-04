@@ -36,6 +36,8 @@ Now that we are done with our installation let's learn how to run the code:
 2. From cypress run integration tests.
 3. After the execution see if any failure.
 
+Circle CI Implementation:
+
 #Future Upgrades
  1. For next step I can work on managing waits more precisely.
  2. Change xpath locator handling.
