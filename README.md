@@ -2,11 +2,11 @@
 
 #QA Cypress Testing Assignment done by - Preksha Kasliwal
 
-#Introduction:
+##Introduction:
 
 This project covers cypress cucumber based testing framework to execute online tests following hybrid design pattern. 
 
-#Approach: 
+##Approach: 
 
 1. I have used combination of cypress with cucumber to make it readable, meaningful for all stakeholders. 
 2. In place of describe and it blocks I used Given When Then format to have clear understanding of steps and user flow.
@@ -17,7 +17,7 @@ This project covers cypress cucumber based testing framework to execute online t
 
 Alot said lets move ahead
 
-#Installations: 
+##Installations: 
 
 1. npm install
 2. npm install cypress-cucumber-preprocessor
@@ -30,15 +30,18 @@ npm fund, npm audit fix --force
 
 Now that we are done with our installation let's learn how to run the code:
 
-#Steps to Run:
+##Steps to Run from IDE:
 
-1. goto Command prompt run : npm run cypress:open
-2. From cypress run integration tests.
-3. After the execution see if any failure.
+1. Clone the repo and open in IDE
+2. goto terminal and run : npm run cypress:open
+3. From cypress UI run integration tests.
+4. After the execution see if any failure.
 
-Circle CI Implementation:
-
-#Future Upgrades
+##Circle CI Implementation:
+ 1. To execute test from CI/CD piepine - https://app.circleci.com/pipelines/github/PrekshaKasliwal04?filter=mine
+ Right now if builds whenever there is any commit on main branch.
+ 
+##Future Upgrades
  1. For next step I can work on managing waits more precisely.
  2. Change xpath locator handling.
  3. HTML Report creation and email to stakeholdrs.
