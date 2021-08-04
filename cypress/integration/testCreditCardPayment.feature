@@ -19,7 +19,7 @@ Scenario:3D Secure -1 Card payment ending to error page
   When Enters cardnumber 345177925488348 expirydate 0330 cvv 7373 cardholder name "Amex card"
   And Clicks on pay
   And Enters username "user" password "password"
-  Then User should be directed to error page
+  Then User should see payment success message
 
 Scenario:3D Secure -2 Card payment
   Given User visits base URL with path "/#/"
