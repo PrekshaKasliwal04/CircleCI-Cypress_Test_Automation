@@ -5,5 +5,5 @@ workflows:
  build:
   jobs:
   - cypresss/install:
-   - cypress/run:
+   - cypress/run
   
