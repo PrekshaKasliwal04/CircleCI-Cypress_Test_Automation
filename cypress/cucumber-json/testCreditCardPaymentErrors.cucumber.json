@@ -1,0 +1,333 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Tests to verify various error checks while using CreditCard payment",
+    "line": 1,
+    "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment",
+    "tags": [],
+    "uri": "testCreditCardPaymentErrors.feature",
+    "elements": [
+      {
+        "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment;user-should-get-errors-with-invalid-card-numbers",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "User should get errors with invalid card numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 182763000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 16851000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Enters cardnumber 370000000000009",
+            "result": {
+              "status": "passed",
+              "duration": 4535000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "expirydate 0330",
+            "result": {
+              "status": "passed",
+              "duration": 4416000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "cvv 7373",
+            "result": {
+              "status": "passed",
+              "duration": 8394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "cardholder name \"American Express\"",
+            "result": {
+              "status": "passed",
+              "duration": 2532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should see error message \"Invalid card number\"",
+            "result": {
+              "status": "failed",
+              "duration": 2092000000,
+              "error_message": "AssertionError: expected 'Incomplete field' to include 'Invalid card number'\n    at Context.eval (https://www.mystoredemo.io/__cypress/tests?p=cypress\\integration\\testCreditCardPaymentErrors.feature:186:25)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment;user-should-get-errors-with-invalid-card-numbers",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "User should get errors with invalid card numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2667000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 16888000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Enters cardnumber 37000000",
+            "result": {
+              "status": "passed",
+              "duration": 4522000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "expirydate 0330",
+            "result": {
+              "status": "passed",
+              "duration": 4543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "cvv 7373",
+            "result": {
+              "status": "passed",
+              "duration": 8411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "cardholder name \"American Express\"",
+            "result": {
+              "status": "passed",
+              "duration": 2504000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should see error message \"Incomplete field\"",
+            "result": {
+              "status": "passed",
+              "duration": 2077000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment;user-should-get-to-errors-page-after-entering-invalid-expiry-date",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "User should get to errors page after entering invalid expiry date",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 16773000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "Enters cardnumber 370000000000002",
+            "result": {
+              "status": "passed",
+              "duration": 4547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "expirydate 2323",
+            "result": {
+              "status": "passed",
+              "duration": 4374000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "cvv 7373",
+            "result": {
+              "status": "passed",
+              "duration": 8653000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "cardholder name \"Amex card\"",
+            "result": {
+              "status": "passed",
+              "duration": 2389000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "User should be directed to error page",
+            "result": {
+              "status": "passed",
+              "duration": 3436000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment;user-should-get-error-when-clicks-on-pay-without-filling-any-details",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "User should get error when clicks on pay without filling any details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2796000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 16806000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2222000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "User should see Incomplete field errors",
+            "result": {
+              "status": "passed",
+              "duration": 10230000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

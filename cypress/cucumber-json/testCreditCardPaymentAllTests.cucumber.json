@@ -1,0 +1,83 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Tests to verify various error checks while using CreditCard payment",
+    "line": 1,
+    "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment",
+    "tags": [],
+    "uri": "testCreditCardPaymentAllTests.feature",
+    "elements": [
+      {
+        "id": "tests-to-verify-various-error-checks-while-using-creditcard-payment;3d-secure--2-card-payment",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "3D Secure -2 Card payment",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 134571000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 10654000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Enters cardnumber 371449635398431 expirydate 0330 cvv 7373 cardholder name \"Amex card\"",
+            "result": {
+              "status": "passed",
+              "duration": 17617000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enters authentication \"password\"",
+            "result": {
+              "status": "passed",
+              "duration": 10549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should be directed to error page",
+            "result": {
+              "status": "failed",
+              "duration": 2095000000,
+              "error_message": "AssertionError: expected 'Your order has been successfully placed.' to include 'Oops! Something went wrong. Please try again.'\n    at Context.eval (https://www.mystoredemo.io/__cypress/tests?p=cypress\\integration\\testCreditCardPaymentAllTests.feature:168:25)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

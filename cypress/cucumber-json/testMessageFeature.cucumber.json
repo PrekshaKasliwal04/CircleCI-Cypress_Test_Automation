@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Perform Automation Test for Online tests Messages",
+    "line": 1,
+    "id": "perform-automation-test-for-online-tests-messages",
+    "tags": [],
+    "uri": "testMessageFeature.feature",
+    "elements": [
+      {
+        "id": "perform-automation-test-for-online-tests-messages;user-should-be-able-to-see-unread-messages-bolded",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User should be able to see unread messages bolded",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/admin/messages\"",
+            "result": {
+              "status": "passed",
+              "duration": 1016000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 720000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should see unread messages in bold",
+            "result": {
+              "status": "passed",
+              "duration": 2071000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Perform Automation Test for Online tests Branding",
+    "line": 1,
+    "id": "perform-automation-test-for-online-tests-branding",
+    "tags": [],
+    "uri": "testBrandingFeature.feature",
+    "elements": [
+      {
+        "id": "perform-automation-test-for-online-tests-branding;user-should-be-able-to-update-branding",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User should be able to update branding",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User logged in with valid credentials",
+            "result": {
+              "status": "failed",
+              "duration": 2322000000,
+              "error_message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.xpath()`\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Perform Automation Test for...`\n    at ensureElement (http://localhost:55100/__cypress/runner/cypress_runner.js:162536:24)\n    at validateType (http://localhost:55100/__cypress/runner/cypress_runner.js:162373:16)\n    at Object.ensureSubjectByType (http://localhost:55100/__cypress/runner/cypress_runner.js:162409:9)\n    at pushSubjectAndValidate (http://localhost:55100/__cypress/runner/cypress_runner.js:171130:15)\n    at Context.<anonymous> (http://localhost:55100/__cypress/runner/cypress_runner.js:171467:18)\nFrom Your Spec Code:\n    at eval (http://localhost:55100/__cypress/tests?p=cypress\\integration\\testBrandingFeature.feature:335:38)\n    at eval (http://localhost:55100/__cypress/tests?p=cypress\\integration\\testBrandingFeature.feature:12680:44)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User visits base URL with path \"/#/admin/branding\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Performs branding",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should see branding count getting changed",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

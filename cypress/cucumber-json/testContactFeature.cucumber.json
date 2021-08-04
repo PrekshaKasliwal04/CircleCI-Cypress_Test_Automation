@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Perform Automation Test for Online tests Contact",
+    "line": 1,
+    "id": "perform-automation-test-for-online-tests-contact",
+    "tags": [],
+    "uri": "testContactFeature.feature",
+    "elements": [
+      {
+        "id": "perform-automation-test-for-online-tests-contact;user-should-be-able-to-see-success-message",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User should be able to see success message",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"\"",
+            "result": {
+              "status": "passed",
+              "duration": 1194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User submit form with details",
+            "result": {
+              "status": "passed",
+              "duration": 3766000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should see thanks contact message",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User logged in with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 6823000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

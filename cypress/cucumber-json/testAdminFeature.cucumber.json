@@ -1,0 +1,112 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Perform Automation Test for Online tests Admin",
+    "line": 1,
+    "id": "perform-automation-test-for-online-tests-admin",
+    "tags": [],
+    "uri": "testAdminFeature.feature",
+    "elements": [
+      {
+        "id": "perform-automation-test-for-online-tests-admin;user-should-be-able-to-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User should be able to login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User enters login credentials",
+            "result": {
+              "status": "passed",
+              "duration": 3696000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Login button clicked",
+            "result": {
+              "status": "passed",
+              "duration": 2104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Text should contain heading \"Room\"",
+            "result": {
+              "status": "passed",
+              "duration": 1036000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "perform-automation-test-for-online-tests-admin;user-should-be-able-to-save-rooms",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User should be able to save rooms",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User logged in with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 8895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User saves room",
+            "result": {
+              "status": "passed",
+              "duration": 2507000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User should be re-directed to URL having \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 2017000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "New room should be added in list",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

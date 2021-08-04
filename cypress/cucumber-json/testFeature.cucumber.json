@@ -1,0 +1,162 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Automation Testing Online tests",
+    "line": 1,
+    "id": "automation-testing-online-tests",
+    "tags": [],
+    "uri": "testFeature.feature",
+    "elements": [
+      {
+        "id": "automation-testing-online-tests;user-should-be-able-to-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User should be able to login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 15899000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "User enters login credentials",
+            "result": {
+              "status": "passed",
+              "duration": 1767000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Login button clicked",
+            "result": {
+              "status": "passed",
+              "duration": 3161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Text should contain heading \"Room\"",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automation-testing-online-tests;user-should-be-able-to-save-rooms",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User should be able to save rooms",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User logged in with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 7075000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User saves room",
+            "result": {
+              "status": "passed",
+              "duration": 2566000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User should be re-directed to URL having \"admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 2021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "New room should be added in list",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automation-testing-online-tests;user-should-be-able-to-update-branding",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "User should be able to update branding",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "User logged in with valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 7004000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "User visits base URL with path \"/#/admin/branding\"",
+            "result": {
+              "status": "passed",
+              "duration": 3487000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Performs branding",
+            "result": {
+              "status": "passed",
+              "duration": 1401000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User should see branding count getting changed",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<a class=\"nav-link\" href=\"#/admin\">Logout</a>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Automation Testing Online t...`\n    at $Cy.ensureDescendents (https://automationintesting.online/__cypress/runner/cypress_runner.js:162672:24)\n    at ensureDescendents (https://automationintesting.online/__cypress/runner/cypress_runner.js:151114:8)\n    at possiblyScrollMultipleTimes (https://automationintesting.online/__cypress/runner/cypress_runner.js:151223:22)\n    at scrollContainers (https://automationintesting.online/__cypress/runner/cypress_runner.js:151246:16)\n    at ensureDescendentsAndScroll (https://automationintesting.online/__cypress/runner/cypress_runner.js:151250:14)\n    at ensureElIsNotCovered (https://automationintesting.online/__cypress/runner/cypress_runner.js:151255:5)\n    at runAllChecks (https://automationintesting.online/__cypress/runner/cypress_runner.js:151404:52)\n    at retryActionability (https://automationintesting.online/__cypress/runner/cypress_runner.js:151427:16)\nFrom previous event:\n    at tryFn (https://automationintesting.online/__cypress/runner/cypress_runner.js:167007:21)\n    at whenStable (https://automationintesting.online/__cypress/runner/cypress_runner.js:167045:12)\n    at https://automationintesting.online/__cypress/runner/cypress_runner.js:166540:16\nFrom previous event:\n    at $Cy.retry (https://automationintesting.online/__cypress/runner/cypress_runner.js:166520:38)\n    at retryActionability (https://automationintesting.online/__cypress/runner/cypress_runner.js:151430:19)\n    at https://automationintesting.online/__cypress/runner/cypress_runner.js:151432:7\nFrom previous event:\n    at Object.verify (https://automationintesting.online/__cypress/runner/cypress_runner.js:151343:21)\n    at perform (https://automationintesting.online/__cypress/runner/cypress_runner.js:153396:29)\nFrom previous event:\n    at mouseAction (https://automationintesting.online/__cypress/runner/cypress_runner.js:153434:20)\n    at Context.click (https://automationintesting.online/__cypress/runner/cypress_runner.js:153453:14)\n    at Context.<anonymous> (https://automationintesting.online/__cypress/runner/cypress_runner.js:171468:21)\nFrom Your Spec Code:\n    at Context.eval (https://automationintesting.online/__cypress/tests?p=cypress\\integration\\testFeature.feature:133:11)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

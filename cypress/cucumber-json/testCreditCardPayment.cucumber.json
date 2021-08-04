@@ -1,0 +1,262 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Tests to verify successful Checkout with CreditCard",
+    "line": 1,
+    "id": "tests-to-verify-successful-checkout-with-creditcard",
+    "tags": [],
+    "uri": "testCreditCardPayment.feature",
+    "elements": [
+      {
+        "id": "tests-to-verify-successful-checkout-with-creditcard;user-should-be-able-to-see-creditcard-option-as-payment-methods",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User should be able to see creditcard option as payment methods",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 16529000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "Adds product to cart",
+            "result": {
+              "status": "passed",
+              "duration": 2332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Clicks on Continue to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 131000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Credit Card payment method should be visible to user",
+            "result": {
+              "status": "passed",
+              "duration": 5137000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tests-to-verify-successful-checkout-with-creditcard;non-3d-secured-card-payment-verification",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Non 3D Secured Card payment Verification",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 6007000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 17037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Enters cardnumber 370000000000002 expirydate 0330 cvv 7373 cardholder name \"Amex card\"",
+            "result": {
+              "status": "passed",
+              "duration": 19809000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2208000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User should see payment success message",
+            "result": {
+              "status": "passed",
+              "duration": 4079000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tests-to-verify-successful-checkout-with-creditcard;3d-secure--1-card-payment-ending-to-error-page",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "3D Secure -1 Card payment ending to error page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2760000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 16836000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Enters cardnumber 345177925488348 expirydate 0330 cvv 7373 cardholder name \"Amex card\"",
+            "result": {
+              "status": "passed",
+              "duration": 20057000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Enters username \"user\" password \"password\"",
+            "result": {
+              "status": "passed",
+              "duration": 5094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User should be directed to error page",
+            "result": {
+              "status": "passed",
+              "duration": 3269000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "tests-to-verify-successful-checkout-with-creditcard;3d-secure--2-card-payment",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "3D Secure -2 Card payment",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "User visits base URL with path \"/#/\"",
+            "result": {
+              "status": "passed",
+              "duration": 2517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "User selects creditcard as payment method",
+            "result": {
+              "status": "passed",
+              "duration": 16913000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "Enters cardnumber 371449635398431 expirydate 0330 cvv 7373 cardholder name \"Amex card\"",
+            "result": {
+              "status": "passed",
+              "duration": 19973000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Clicks on pay",
+            "result": {
+              "status": "passed",
+              "duration": 2217000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "Enters authentication \"password\"",
+            "result": {
+              "status": "passed",
+              "duration": 10605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "User should see payment success message",
+            "result": {
+              "status": "passed",
+              "duration": 4112000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
