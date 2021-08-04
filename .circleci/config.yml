@@ -1,12 +1,7 @@
 version: 2.1
 orbs:
- cypress: cypress-io/cypress@1
+  cypress: cypress-io/cypress@1
 workflows:
- build:
-  jobs:
-   - cypress/run:
-      requires:
-       - cypresss/install
-      record: true
-      parallel: true
-      paralllism: 2
+  build:
+    jobs:
+      - cypress/run
